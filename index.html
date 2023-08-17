@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap" rel="stylesheet">
+    <script src="json.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" defer></script>
+    <script src="jquery.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <a class="logo" href="#"><img src="./img/Logo.png" alt="X-KIDS"></a>
+        <div class="navigation">
+            <a href="#">Наши достижения</a>
+            <a href="#">Тренеры</a>
+            <a href="#">Блог</a>
+        </div>
+        <div class="buttons">
+            <button class="buttons__to-form">Оставить заявку</button>
+            <button class="buttons__phone">+7 (987) 654-32-10</button>
+        </div>
+    </nav>
+    <main class="main">
+        <nav class="nav2">
+            <div class="nav2__wrapper">
+                <a class="nav2__item1" href="#">Обучение на сноуборде</a>
+                <a class="nav2__item2" href="#">Школа сёрфинга</a>
+                <a class="nav2__item3" href="#">Летний лагерь</a>
+                <a class="nav2__item4" href="#">Тренировки на батутах</a>
+                <a class="nav2__item5" href="#">Школа вейкбординга</a>
+            </div>
+        </nav>
+        <img class="main__girl" src="./img/Girl.png" alt="Girl">
+        <div class="main__information">
+            <h1>детские тренировки на батутах x-kids</h1>
+            <p>в Санкт-Петербурге</p>
+            <button>Записаться</button>
+        </div>
+    </main>
+    <section class="demonstration">
+        <header class="header">
+            <h2>Какие мышцы работают
+                во время прыжков на батуте?</h2>
+            <p>Различные виды упражнений в батутном спорте тренируют вестибулярный аппарат, развивают четкость и
+                координацию движений и способствуют похудению, выполняя, в том числе, роль гимнастики и фитнеса. Чтобы
+                оценить пользу наших занятий для ребенка, мырасскажем, какие мышцы работают при прыжках на батуте.</p>
+        </header>
+        <div class="demonstration__description">
+            <div class="demonstration__images">
+                <img class="demonstration__boy" src="./img/BoyArms.png" alt="Boy arms">
+                <img class="demonstration__arrow" src="./img/ArrowArms.svg" alt="Arrow to arms">
+            </div>
+            <div class="demonstration__description__text">
+                <div class="description__item description__selected-item" id="0">
+                    <h3>Руки</h3>
+                    <p>Разведение в стороны для удержания баланса тренирует их выносливость и силу.</p>
+                </div>
+                <div class="description__item" id="1">
+                    <h3>Спина</h3>
+                    <p>Абсолютно любые упражнения на батутах тренируют мышцы спины.</p>
+                </div>
+                <div class="description__item" id="2">
+                    <h3>Живот</h3>
+                    <p>Группировка и скручивание в воздухе помогут накачать пресс и сделать
+                        живот подтянутым и упругим.</p>
+                </div>
+                <div class="description__item" id="3">
+                    <h3>Ягодицы</h3>
+                    <p>Сильный импульс мышцам дает отталкивание в нижней точке прыжка. Для усиления нагрузки можно во
+                        время прыжка развести ноги
+                        в стороны или одну &mdash; вбок, а другую &mdash; назад.</p>
+                </div>
+                <div class="description__item" id="4">
+                    <h3>Ноги</h3>
+                    <p>Прыжки на батуте обеспечивают лучшую мышечную нагрузку на эту группу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="conditions">
+            <h2>ждем вас</h2>
+            <div class="conditions__items">
+                <div class="conditions__item conditions__item1">
+                    <p class="conditions__item__parag1">если вашему ребёнку </p>
+                    <p class="conditions__item__parag2">от 3 лет</p>
+                </div>
+                <div class="conditions__item conditions__item2">
+                    <p class="conditions__item__parag1">если вам необходимо подтянуть</p>
+                    <p class="conditions__item__parag2">ВСЕ ГРУППЫ МЫШЦ</p>
+                </div>
+                <div class="conditions__item conditions__item3">
+                    <p class="conditions__item__parag1">если он любит</p>
+                    <p class="conditions__item__parag2">ПРЫГАТЬ
+                        и КУВЫРКАТЬСЯ</p>
+                </div>
+            </div>
+        </div>
+        <form class="form" action="#">
+            <p>Заполните форму и мы вам перезвоним в ближайшее время</p>
+            <input class="form__name input-feild" type="text" placeholder="Имя">
+            <input class="form__child-name input-feild" type="text" placeholder="Имя ребёнка ">
+            <input class="form__age input-feild" type="number" placeholder="Возраст ребёнка">
+            <div class="form__select">
+                <img class="form__select__img" src="./img/SelectArrow.svg" alt="Выбрать">
+                <div class="form__select__disabled">Выберите вид активности</div>
+                <div class="form__select__options">
+                    <div class="form__option">Вейкбординг</div>
+                    <div class="form__option">Прыжки на батутах</div>
+                    <div class="form__option">Сёрфинг</div>
+                    <div class="form__option">Сноубординг</div>
+                </div>
+            </div>
+            <input class="form__email input-feild" type="email" placeholder="Email">
+            <input class="form__tel input-feild" type="tel" placeholder="Телефон"
+                pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?">
+            <label class="form__checkbox-label"><input class="form__checkbox-input" type="checkbox">Я даю свое согласие
+                на обработку персональных данных и соглашаюсь
+                с политикой конфиденциальности</label>
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </section>
+</body>
+
+</html>
